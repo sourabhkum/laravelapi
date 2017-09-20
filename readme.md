@@ -51,3 +51,47 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+
+<h3>HTTP Request</h3>
+<p><code>GET api/allUsers</code></p>
+<p><code>HEAD api/allUsers</code></p>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET "http://localhost/api/allUsers" \
+-H "Accept: application/json"</code></pre>
+<h2>api/register</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "http://localhost/api/register" \
+-H "Accept: application/json"</code></pre>
+<h2>api/login</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "http://localhost/api/login" \
+-H "Accept: application/json"</code></pre>
+<h2>api/forgot</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "http://localhost/api/forgot" \
+-H "Accept: application/json"</code></pre>
+<h2>api/reset</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "http://localhost/api/reset" \
+-H "Accept: application/json"</code></pre>
+<h2>api/profile</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET "http://localhost/api/profile" \
+-H "Accept: application/json"</code></pre>
+<h2>api/updateProfile</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X PUT "http://localhost/api/updateProfile" \
