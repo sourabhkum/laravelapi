@@ -9,7 +9,6 @@ use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 use Validator;
-use TomLingham\Searchy\Facades\Searchy;
 class ApiController extends Controller
 {
     /**
@@ -29,7 +28,6 @@ class ApiController extends Controller
         //Get all users
 
         $users = User::paginate(10);
-
         return response()->json(array(
             'error'=>false,
             'data'=>$users,

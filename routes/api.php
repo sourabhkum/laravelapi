@@ -19,6 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('allUsers','ApiController@index');
+Route::get('allPost','ApiPostController@index');
 Route::post('register', 'Auth\RegisterController@register');
 Route::post('login', 'Auth\LoginController@login');
 Route::post('forgot', 'Auth\ForgotPasswordController@getResetToken');
@@ -29,4 +30,5 @@ Route::group(['middleware' => 'auth:api'], function(){
     Route::get('profile', 'ApiController@profile');
     Route::Put('updateProfile','ApiController@updateProfile');
     Route::Delete('deleteUser','ApiController@deleteUser');
+    Route::post('postCreate','ApiPostController@create');
 });
